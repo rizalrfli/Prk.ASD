@@ -10,9 +10,11 @@ public class MahasiswaMain01 {
         mhs1.ubahKelas("SI 2K");
         mhs1.updateIpk(3.60);
         mhs1.tampilInformasi();
-        Mahasiswa01 mhs2 = new Mahasiswa01();
+        Mahasiswa01 mhs2 = new Mahasiswa01("Annisa Nabila", "2141720160", "TI 2L", 3.25);
         mhs2.updateIpk(3.30);
         mhs2.tampilInformasi();
+        Mahasiswa01 mhs = new Mahasiswa01("Rizal", "2441070002", "TI 1F", 3.69);
+        mhs.tampilInformasi();
     }
 
 }
