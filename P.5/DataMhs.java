@@ -7,7 +7,7 @@ public class DataMhs {
         this.mahasiswa = mahasiswa;
     }
 
-    void hitungMaxUTS(int l, int r) {
+    int hitungMaxUTS(int l, int r) {
         if (l == r) {
             if (maxUTS < mahasiswa[l].nilaiUTS) maxUTS = mahasiswa[l].nilaiUTS;
         } else {
@@ -15,9 +15,10 @@ public class DataMhs {
             hitungMaxUTS(l, mid);
             hitungMaxUTS(mid + 1, r);
         }
+        return maxUTS;
     }
 
-    void hitungMinUTS(int l, int r) {
+    int hitungMinUTS(int l, int r) {
         if (l == r) {
             if (minUTS > mahasiswa[l].nilaiUTS) minUTS = mahasiswa[l].nilaiUTS;
         } else {
@@ -25,12 +26,14 @@ public class DataMhs {
             hitungMinUTS(l, mid);
             hitungMinUTS(mid + 1, r);
         }
+        return minUTS;
     }
-    void hitungRataRataUAS() {
+    int hitungRataRataUAS() {
         double total = 0;
         for (Mahasiswa1 m : mahasiswa) {
             total += m.nilaiUAS;
         }
         rataRataUAS = total / mahasiswa.length;
+        return (int) rataRataUAS;
     }
 }
