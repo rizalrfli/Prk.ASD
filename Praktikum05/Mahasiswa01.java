@@ -1,10 +1,10 @@
-public class Mahasiswa {
+public class Mahasiswa01 {
     String nim, nama, kelas;
     double ipk;
-    Mahasiswa () {
+    Mahasiswa01 () {
 
     }
-    Mahasiswa (String nm, String name, String kls, double ip) {
+    Mahasiswa01 (String nm, String name, String kls, double ip) {
         nim = nm;
         nama = name;
         kelas = kls;

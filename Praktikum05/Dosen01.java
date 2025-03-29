@@ -1,8 +1,8 @@
-public class Dosen {
+public class Dosen01 {
     String kode, nama;
     boolean jenisKelamin;
     int usia;
-    public Dosen(String kd, String name, boolean jk, int age){
+    public Dosen01(String kd, String name, boolean jk, int age){
         kode = kd;
         nama = name;
         jenisKelamin = jk;

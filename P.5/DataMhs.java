@@ -1,9 +1,9 @@
 public class DataMhs {
-    Mahasiswa1[] mahasiswa;
+    Mahasiswa001[] mahasiswa;
     int maxUTS, minUTS;
     double rataRataUAS;
 
-    DataMhs(Mahasiswa1[] mahasiswa) {
+    DataMhs(Mahasiswa001[] mahasiswa) {
         this.mahasiswa = mahasiswa;
     }
 
@@ -30,7 +30,7 @@ public class DataMhs {
     }
     int hitungRataRataUAS() {
         double total = 0;
-        for (Mahasiswa1 m : mahasiswa) {
+        for (Mahasiswa001 m : mahasiswa) {
             total += m.nilaiUAS;
         }
         rataRataUAS = total / mahasiswa.length;
